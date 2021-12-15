@@ -38,13 +38,6 @@ export class MainCardComponent implements OnInit {
     this.isError = false;
     if(this.allNumbers.includes(clickedNum))
     {
-      if(this.getAmount != 0)
-      {
-        this.isAmount = true;
-      }
-      else {
-        this.isAmount = false;
-      }
       for(let i = 0; i < this.allNumbers.length; i++)
       {
         if(this.allNumbers[i] === clickedNum)
@@ -81,7 +74,7 @@ export class MainCardComponent implements OnInit {
   {
     
       console.log(this.amountReceived);
-      this.allNumbers = [0, 0, 0, 0, 0];
+      this.allNumbers.length = 0;
       this.isFull = false;
       this.getAmount = 0;
       console.log(this.allNumbers);
@@ -91,6 +84,7 @@ export class MainCardComponent implements OnInit {
       
       //this.sentFinalAmount.emit(this.getAmount);
     alert("Your ticket is cleared.")
+    this.isAmount = false;
   }
 
   checkFull():boolean
