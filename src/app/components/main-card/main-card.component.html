@@ -1,0 +1,13 @@
+<div class="container numList">
+    <button type="button" class="btn" *ngFor="let number of nums" (click)="[selectNumber(number), 
+    selected(number), checkFull()]" [ngClass]="{'warning' : selected(number)===true}">{{number}}</button>
+
+
+    <div>
+        <button type="button" class="btn2" (click)="[checkout()]" [ngClass]="{'disable-click': isFull===false}">CASH</button>
+        <button type="button" class="btn2" (click)="[clear()]" [ngClass]="{'disable-click': isAmount===false}">CLEAR</button>
+    </div>
+
+    
+</div>
+

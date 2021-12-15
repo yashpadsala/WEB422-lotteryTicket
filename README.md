@@ -1,27 +1,9 @@
-# Lottery
+# web422-lotteryTicket
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
+This is typescript and angular project. In this project I craeted lottery ticket app that allows users to choose any five numbers between 1 to 20 and select bet amount. User also clear their number choice before processing next step. 
 
-## Development server
+The cashier must select 5 lottery numbers. Cashier cannot select more than 5 lottery numbers. Also cashier need to select bet amount before cashout ticket. Moreover cashier can reset their lottery numbers by using clear buttons. When cashier selecting lottery number app automatically updated selected numbers in right side. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+When app starts at that time both cash and clear buttons are disable. When cashier select anyb lottery number or amount at that time clear button will clickable and after select all five lottery numbers and bet amount cash out button becomes clickable. 
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+In this app their is a bug in total price. When cashier press clear button app will creates all selected lottery numbers but it will not clear bet amount. The reason is that I created state in main-card component. I created four components under my root component. Like, main-card, money, header, selected. I export betamount from money component to main-card and selected. But when I update my state at that time it only update betamount in main-card but not in selected componet. So only bug in betamount.

@@ -1,1 +1,118 @@
 /* You can add global styles to this file, and also import other style files */
+*
+.container
+{
+    max-width: 600px;
+    width:80%;
+    height: 350px;
+    margin:0 auto;
+    background-color: lightyellow;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+h1 {
+    text-align: center;
+    text-decoration-line: underline;
+    color: yellow;
+    background-color: rgb(84, 84, 170);
+    border: 3px solid black;
+}
+
+.btn {
+    background-color: black;
+    color: whitesmoke;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 20%;
+    border-radius: 10px;
+}
+
+.btn2 {
+    background-color: rgb(230, 185, 40);
+    color: rgb(0, 0, 0);
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 40%;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.btn2 :active {
+    background-color: rgb(223, 182, 48);
+    box-shadow: 0 5px #666;
+}
+
+.btn2 :hover {
+    background-color: rgb(221, 181, 50);
+}
+
+.btn-mon {
+    background-color: rgb(58, 58, 211);
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 32%;
+    height: 30%;
+    color: white;
+}
+
+.numList {
+    background-color: cornflowerblue;
+    width: 30%;
+    height: 200px;
+    float: left;
+    margin-left: 25px;
+}
+
+.con-right {
+    float: right;
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 55%;
+    height: 140px;
+    background-color: lightyellow;
+    object-fit: cover;
+}
+
+.first {
+    background-color: lightyellow;
+    width: 40%;
+    margin-right: 25px;
+    height: 25%;
+    float: left;
+}
+
+.second {
+    float: right;
+    margin-top: -50%;
+    background-color: lightyellow;
+    height: 250px;
+    width: 50%;
+    border: 8px solid rgb(0, 0, 0);
+    float: right;
+}
+
+.total { 
+    margin-top: 100%;
+}
+
+.para
+{
+    margin: 0;
+}
+
+.warning {
+    border-color: red;
+}
+
+.disable-click {
+    pointer-events: none;
+    cursor: default;
+    background-color: gray;
+}
+
+.disable-click:hover {
+    filter: brightness(85%);
+}
